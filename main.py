@@ -53,6 +53,17 @@ total_health_armor = 30
 
 
 
+def update_chosen_game(game_id):
+    chosen_game = game_id
+    chosen_death = death_identifiers[chosen_game]
+    print("Game chosen:", game_names[chosen_game])
+    print(chosen_death)
+
+
+
+
+
+
 # Helper functions
 def hearthstone_damage_taken(starting_health, recognised_health):
     if starting_health > recognised_health:
@@ -60,6 +71,7 @@ def hearthstone_damage_taken(starting_health, recognised_health):
     return starting_health
 
 def call_shock(operator, duration, intensity):
+    print(operator)
     # json_value = {"Username": USERNAME, "Name": NAME, "Code": CODE, "Intensity": intensity,
     #               "Duration": duration, "Apikey": API_KEY, "Op": operator}
     # r = requests.post(URL, json=json_value)
