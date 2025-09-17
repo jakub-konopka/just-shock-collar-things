@@ -32,15 +32,15 @@ BEEP_INSTEAD_OF_SHOCK = 0  # 0-100, if 0 always shocks else chance of beep inste
 
 
 # Game-specific settings
-game_names = ["derptiny 2", "overwat 2", "warm stone", "warm stone but laptop"]
+game_names = ["d2", "ow2", "hearthstoneBG", "hearthstoneBG_laptop"]
 chosen_game = 0  # Default chosen game index
 print("Game chosen:", game_names[chosen_game])
 
 positions_for_grab = [
     [235, 79, 1000, 185],   # D2
-    [3210, 45, 3400, 200],  # Overwat
-    [1600, 990, 1860, 1300],  # Warmstone
-    [850, 800, 1070, 1030]  # Warmstone Mobile
+    [3210, 45, 3400, 200],  # ow2
+    [1600, 990, 1860, 1300],  # hearthstoneBG
+    [850, 800, 1070, 1030]  # hearthstoneBG_laptop
 ]
 
 sleep_times = [45, 15, 30, 30]
